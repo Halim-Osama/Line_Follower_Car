@@ -2,11 +2,32 @@
 
 An Arduino-based autonomous line-following robot with a smart sensor brain and a multi-step recovery system. Built on a two-wheel differential drive chassis using a TB6612FNG motor driver and three digital IR sensors.
 
-![Line Follower Robot](./robot.jpg)
+<p align="center">
+  <img src="./Car_pic.jpeg" alt="Line Follower Robot" width="600"/>
+</p>
 
 ---
 
-## 📸 Overview
+## 📸 Gallery
+
+<p align="center">
+  <img src="./Upper_car.jpeg" alt="Top view" width="45%"/>
+  &nbsp;&nbsp;
+  <img src="./down_car.jpeg" alt="Bottom / sensor view" width="45%"/>
+</p>
+<p align="center"><em>Left: top view showing Arduino & wiring &nbsp;|&nbsp; Right: underside with IR sensors</em></p>
+
+---
+
+## 🎥 Demo Video
+
+> **[▶ Watch the robot in action](./Video_of_Running.mp4)**
+>
+> *(Download or clone the repo to play the video locally — GitHub does not stream `.mp4` files inline)*
+
+---
+
+## 📖 Overview
 
 This robot detects and follows a dark line on a light surface using three IR sensors (left, middle, right). When the line is lost, it enters an intelligent recovery routine that systematically searches for the line before giving up.
 
@@ -102,7 +123,7 @@ The robot remembers the last direction it tracked (`lastDirection`) so recovery 
    ```bash
    git clone https://github.com/your-username/line-follower-robot.git
    ```
-2. Open `line_follower.ino` in the Arduino IDE.
+2. Open `Code_of_line_follower.ino` in the Arduino IDE.
 3. Select your board and COM port.
 4. Click **Upload**.
 
@@ -130,8 +151,12 @@ Recovery steps are also printed to Serial so you can follow exactly which step i
 ## 📁 Project Structure
 
 ```
-line-follower-robot/
-├── line_follower.ino   # Main Arduino sketch
+Line_Follower_Car/
+├── Code_of_line_follower.ino   # Main Arduino sketch
+├── Car_pic.jpeg                # Hero photo
+├── Upper_car.jpeg              # Top view photo
+├── down_car.jpeg               # Underside / sensor view photo
+├── Video_of_Running.mp4        # Demo video
 └── README.md
 ```
 

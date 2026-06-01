@@ -117,15 +117,7 @@ The robot remembers the last direction it tracked (`lastDirection`) so recovery 
 - [Arduino IDE](https://www.arduino.cc/en/software) (or Arduino CLI)
 - No external libraries required — uses only built-in Arduino functions
 
-### Upload
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/line-follower-robot.git
-   ```
-2. Open `Code_of_line_follower.ino` in the Arduino IDE.
-3. Select your board and COM port.
-4. Click **Upload**.
 
 ### Calibration
 
